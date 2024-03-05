@@ -1,0 +1,57 @@
+/* navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #ffffff;
+    height: 150px;
+
+  }
+  .nav-logo {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center;
+  }
+  
+  
+  .nav-logo img {
+    display:flex;
+    
+    width: 160px; 
+    margin-bottom: 0 !important;
+   
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #1e17a1;
+  }
+  .nav-logo p {
+    color: #171717;
+    font-size: 30px;
+    font-weight: 600;
+   
+
+  }
+  .nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+    
+    
+
+
+  }
+  .nav-menu li {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  
+  }
