@@ -1,0 +1,59 @@
+body {
+    background-color: #eeeeee; 
+    margin: 0; 
+    padding: 0; 
+  }
+.aboutsection-container {
+    height: auto;
+    width: 70%;
+    min-height: auto;
+    min-width: auto;
+    margin-left: 220px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    background-color: #ffff;
+  }
+  
+  .aboutsection-content {
+    flex: 1;
+    padding: 20px; /* Adjust padding for better appearance */
+  }
+  
+  .aboutsection-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutsection-image img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .aboutsection-container h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #1a17a1;
+    line-height: 54.5938px;
+  }
+  
+  .aboutsection-content {
+    font-size: 17px;
+    font-weight: 900;
+  }
+  
+  .first-p,
+  .second-p,
+  .third-p {
+    display: block;
+    box-sizing: border-box;
+    line-height: 31.5714px;
+    margin: 0 0 27px 0;
+    word-wrap: break-word;
+  }
+  
+  /* Additional styles for other paragraphs if needed */
+  

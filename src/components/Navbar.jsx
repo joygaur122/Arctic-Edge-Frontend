@@ -16,6 +16,7 @@ const Navbar = () => {
         <li><Link to="/cooling">Cooling</Link></li>
         <li><Link to="/ventilation">Ventilation</Link></li>
         <li><Link to="/appointment">Appointment</Link></li>
+        <li><Link to="/auth">Auth</Link></li>
       </ul>
     </div>
   );

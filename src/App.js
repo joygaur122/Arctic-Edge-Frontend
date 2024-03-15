@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+
 import Home from ".//pages/Home"
 import About from "./pages/About";
 import Heating from "./pages/Heating";
 import Cooling from "./pages/Cooling";
+import Auth from "./pages/Auth";
 
 ;
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cooling" element={<Cooling />} />
           <Route path="/ventilation" element={<Cooling />} />
           <Route path="/cooling" element={<Cooling />} />
+          <Route path="/auth" element={<Auth />} />
 
 
 

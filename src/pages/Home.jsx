@@ -1,8 +1,11 @@
 import React from 'react';
 import heroImage from '../assets/home.jpg';
 import "./home.css";
-import Hero from "../components/Hero";
-
+import Hero from "../home/Hero";
+import Services from "../home/Services";
+import OurServices from "../home/OurServices"
+import Learn from "../home/Learn"
+import Footer from "../home/Footer";
 const Home = () => {
   return (
     <div>
@@ -25,6 +28,10 @@ const Home = () => {
       </section>
 
       <Hero />
+      <Services/>
+      <OurServices/>
+      <Learn/>
+      <Footer/>
     </div>
   );
 };

@@ -1,0 +1,82 @@
+.heating-services-container {
+    background-color: #eeeeeeee;
+    
+  
+}
+.heating-services-title {
+  height: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1ea7;
+  width: 759.992px;
+  padding: 70px 70px 70px 70px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  margin-right: 40px;
+ 
+
+
+  }
+  .heating-services-description {
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 759.992px;
+  padding: 70px 70px 70px 70px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  top: -70px;
+  right: 0px;
+  left: -40px;
+  display: flex;
+
+ 
+
+  
+  }
+  .heating-services-category-name{
+    display: flex;
+    height: 60px;
+  width: 759.992px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  bottom: 320px;
+  right: 0px;
+  left: 820px;
+  padding: 20px;
+  background-color: #1e17a1;;
+  color: white;
+  border-radius: 40px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+  }
+  .heating-services-category-description {
+ font-size: 17px;
+ font-weight: 700;
+  width: 759.992px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  bottom: 320px;
+  right: 0px;
+  left: 820px;
+  padding: 20px;
+    color: black;
+  }
+  
+  
+  

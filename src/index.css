@@ -4,9 +4,13 @@
   margin:0;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
 
 Body {
-  font-family: 'open sans', sans-serif;
+  font-family: 'Barlow', sans-serif;
   background-color: #ffffff;
   color:#333;
   line-height: 1.6;
