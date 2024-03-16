@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import "./contactform.css"
-import axios from "axios";
+import axios from 'axios';
+import './contactform.css';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -17,29 +18,31 @@ const ContactForm = () => {
         phone,
         message,
       });
+      setIsSubmitted(true); 
       alert("Message sent successfully!");
       console.log(response.data);
     } catch (error) {
-      if (error.response) {
-       
-        console.error(error.response.data);
-        console.error(error.response.status);
-        console.error(error.response.headers);
-        alert("Error sending message: " + error.response.status);
-      } else if (error.request) {
-
-        console.error(error.request);
-        alert("Error sending message: No response received");
-      } else {
-
-        console.error('Error', error.message);
-        alert("Error sending message: " + error.message);
-      }
+      console.error('Error:', error.message);
+      alert('Error sending message: ' + error.message);
     }
-  }
+  };
 
   return (
     <div className="contact-container">
+      {isSubmitted && (
+        <div
+          className="thank-you-message"
+          style={{
+            backgroundColor: '#f0f0f0',
+            padding: '10px',
+            marginBottom: '20px',
+            color: '#1a1ea7;',
+            fontWeight: 'bold',
+          }}
+        >
+          Thank you! We will be in touch shortly.
+        </div>
+      )}
       <div className="contact-info">
         <p></p>
         <a>Phone</a>
@@ -47,41 +50,41 @@ const ContactForm = () => {
       <form className="contact-form" onSubmit={handleSubmit}>
         <label>
           <h1>Make an inquiry</h1>
-          <input 
+          <input
             type="text"
-            id="name" 
-            name="name" 
-            value={name} 
+            id="name"
+            name="name"
+            value={name}
             onChange={(event) => setName(event.target.value)}
             placeholder="name"
           />
         </label>
         <label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            value={email} 
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
             onChange={(event) => setEmail(event.target.value)}
             placeholder="email"
           />
         </label>
         <label>
-          <input 
-            type="tel" 
-            id="phone" 
+          <input
+            type="tel"
+            id="phone"
             name="phone"
-            value={phone} 
-            onChange={(event) => setPhone(event.target.value)} 
+            value={phone}
+            onChange={(event) => setPhone(event.target.value)}
             placeholder="phone"
           />
         </label>
         <label>
-          <textarea 
-            id="message" 
+          <textarea
+            id="message"
             name="message"
-            value={message} 
-            onChange={(event) => setMessage(event.target.value)} 
+            value={message}
+            onChange={(event) => setMessage(event.target.value)}
             placeholder="message"
           />
         </label>
