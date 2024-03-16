@@ -1,7 +1,9 @@
 import { useState } from "react";
 import axios from 'axios';
 import { useCookies } from "react-cookie"
-import UserErrors from "../errors/UserErrors.js";
+import UserErrors from "../errors/UserErrors"
+import { useNavigate } from "react-router-dom"
+
 
 export const AuthPage = () => {
   return (
@@ -65,6 +67,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
    const [_, setCookies] = useCookies(["access_token"])
+   const navigate = useNavigate()
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -75,6 +78,7 @@ const Login = () => {
     });
     setCookies("access_token", result.data.token)
    localStorage.setItem("userID", result.data.userID)
+   navigate("/about");
    }catch(err) {
      let errorMessage = ""
      switch (err.response.data.type) {
