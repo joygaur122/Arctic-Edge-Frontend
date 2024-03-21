@@ -21,9 +21,9 @@ body {
 .service-content {
     position: absolute;
     top: 50%;
-    left: 30%; /* Adjust the left value to move it to the left side */
+    left: 30%; 
     transform: translate(-50%, -50%);
-    text-align: left; /* Align text to the left */
+    text-align: left; 
     color: white;
   }
   .service-content h1 {
@@ -57,3 +57,63 @@ body {
     
   }
   
+
+@media (max-width: 576px) {
+  .services-container {
+    max-width: 100%; 
+    margin-top: 20px;
+    margin-right: 0; 
+    margin-left: auto; 
+    position: relative; 
+  }
+  .service-button {
+    height: auto;
+    margin-left: 55px;
+    padding: 20px 40px;
+    background-color: #fff;
+    color: #Fff;
+    background-color: #1e17a1;
+    border: 0px solid #1e17a1;
+    border-radius: 50px;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+    
+  }
+  .service-content h1 {
+    position: relative;
+    left: 19%;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+   }
+  }
+
+  @media(max-width: 390px) {
+    .service-button {
+      height: auto;
+      margin-right: -65px;
+      padding: 20px 40px;
+      background-color: #fff;
+      color: #Fff;
+      background-color: #1e17a1;
+      border: 0px solid #1e17a1;
+      border-radius: 50px;
+      font-size: 17px;
+      margin-top: 10px;
+      cursor: pointer;
+   
+      
+    }
+  }
+
+ @media(max-width: 390px) {
+  .services-container {
+    max-width: 100%; 
+    margin-top: 20px;
+    margin-right: 0;  
+    position: relative; 
+    z-index: 1; 
+  }
+ }

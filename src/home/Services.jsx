@@ -8,7 +8,7 @@ function Service() {
     <div className="service-content">
       <h1>24 HOUR EMERGENCY SERVICES AVAILABLE NOW</h1>
       <p>Our team is on standy at any hour of the day each day of the week</p>
-      <button className="service-button">Get a free Estimate</button>
+      <button className="service-button">Get Free Estimate</button>
     </div>
    </section>
   )

@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useCookies } from "react-cookie"
 import UserErrors from "../errors/UserErrors"
 import { useNavigate } from "react-router-dom"
+import "./auth.css"
 
 
 export const AuthPage = () => {

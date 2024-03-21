@@ -53,3 +53,54 @@
     cursor: pointer;
     
   }
+
+  @media(max-width: 432px) {
+    .conf-content h1{
+      margin-left: -260px;
+    }
+    .conf-button {
+      display: block;
+      height: 62.8589px;
+      line-height: 24.592px;
+      
+   
+      background-color: #fff;
+      color: #Fff;
+      background-color: #1e17a1;
+      border: 0px solid #1e17a1;
+      border-radius: 50px;
+      padding: 4px 20px; 
+      white-space: nowrap;
+      font-size: 1em;
+      margin-top: 50px;
+      margin-right: 120px;
+      cursor: pointer;
+    }
+    
+  }
+  @media(max-width: 390px) {
+    .conf-content h1{
+      margin-left: 160px;
+    }
+    .conf-button {
+      display: block;
+      height: 62.8589px;
+      line-height: 24.592px;
+      
+   
+      background-color: #fff;
+      color: #Fff;
+      background-color: #1e17a1;
+      border: 0px solid #1e17a1;
+      border-radius: 50px;
+      padding: 4px 20px; 
+      white-space: nowrap;
+      font-size: 1em;
+      margin-top: 50px;
+      margin-right: 120px;
+      cursor: pointer;
+      
+    }
+  
+    
+  }

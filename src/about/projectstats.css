@@ -64,3 +64,16 @@
     background-color: #ffffff;
     border: 5px solid #ffffff;
   }
+
+
+@media(max-width:390px) {
+  .project-container {
+    margin-left: 40px;
+    padding:29px;
+  }
+  .stats-container {
+   background-size: 10%;
+  }
+}
+
+

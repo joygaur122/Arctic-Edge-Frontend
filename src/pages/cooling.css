@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.cooling-container {
+    position: relative;
+    height: 50vh;
+}
+.cooling-image {
+  height:130%;
+  width: 100%;
+  object-fit: cover;
+}
+.cooling-content {
+position: absolute;
+top: 30%;
+left:38%;
+
+}
+.cooling-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff
+}

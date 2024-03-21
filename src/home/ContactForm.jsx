@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import './contactform.css';
+import axios from 'axios'; // Import Axios
+
+import "./contactform.css"; // Assuming you have a separate CSS file for styling
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -9,18 +10,17 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event) => { // Add async keyword for asynchronous Axios call
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/contact/submit-contact", {
+      // Send form data to the server using Axios
+      await axios.post("http://localhost:5000/contact/submit-contact", {
         name,
         email,
         phone,
         message,
       });
-      setIsSubmitted(true); 
-      alert("Message sent successfully!");
-      console.log(response.data);
+      setIsSubmitted(true); // Update isSubmitted state after successful submission
     } catch (error) {
       console.error('Error:', error.message);
       alert('Error sending message: ' + error.message);
@@ -29,67 +29,62 @@ const ContactForm = () => {
 
   return (
     <div className="contact-container">
+      <div className="login">
+        <div className="avatar"></div>
+        <h2>Contact Us</h2>
+        <form className="login-form" onSubmit={handleSubmit}>
+          <div className="textbox">
+            <input 
+              type="text" 
+              placeholder="Name" 
+              value={name} 
+              onChange={(e) => setName(e.target.value)} 
+            />
+          </div>
+          <div className="textbox">
+            <input 
+              type="email" 
+              placeholder="Email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+            />
+          </div>
+          <div className="textbox">
+            <input 
+              type="tel" 
+              placeholder="Phone" 
+              value={phone} 
+              onChange={(e) => setPhone(e.target.value)} 
+            />
+          </div>
+          <div className="textbox">
+            <textarea 
+              placeholder="Message" 
+              value={message} 
+              onChange={(e) => setMessage(e.target.value)} 
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
       {isSubmitted && (
-        <div
+        <div 
           className="thank-you-message"
           style={{
-            backgroundColor: '#f0f0f0',
+            backgroundColor: 'black',
             padding: '10px',
             marginBottom: '20px',
-            color: '#1a1ea7;',
-            fontWeight: 'bold',
+            color: 'green',
+            fontWeight: '700',
+            position: "relative",
+            bottom: "520px",
+            right: "220px"
+            
           }}
         >
           Thank you! We will be in touch shortly.
         </div>
       )}
-      <div className="contact-info">
-        <p></p>
-        <a>Phone</a>
-      </div>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <label>
-          <h1>Make an inquiry</h1>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-            placeholder="name"
-          />
-        </label>
-        <label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            placeholder="email"
-          />
-        </label>
-        <label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={phone}
-            onChange={(event) => setPhone(event.target.value)}
-            placeholder="phone"
-          />
-        </label>
-        <label>
-          <textarea
-            id="message"
-            name="message"
-            value={message}
-            onChange={(event) => setMessage(event.target.value)}
-            placeholder="message"
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
     </div>
   );
 };

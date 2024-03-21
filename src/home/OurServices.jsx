@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heatingImage from '../assets/heating.jpg';
+import heatingImage from '../assets/heating3.jpg';
 import coolingImage from '../assets/cooling.jpg';
 import installationsImage from '../assets/installation.jpg';
 import ventilationImage from '../assets/vent.jpg';

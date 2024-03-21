@@ -16,7 +16,7 @@ const Footer = () => {
             <p>Send us a meesage</p>
 
           </div>
-          <div className="footer-info2">
+          <div className="footer-info4">
             <h2>Hours Of Operation</h2>
             <p>We provide 24 hour emergency service. Call us anytime for fast help. Our team will be there quickly!</p>
 

@@ -46,16 +46,25 @@
   }
   
   .ourservice-description {
-    font-size: 1em; /* Increase the font size to make the description bigger */
+    font-size: 1em; 
   }
   
-  /* ourservices.css */
-/* Styling for the "Our Services" h1 element */
+
 .services-title {
     text-align: center;
     font-size: 2em;
     font-weight:600;
     margin-bottom: 20px;
-    color: #1a17e1; /* Set the color you prefer */
+    color: #1a17e1; 
+  }
+  
+  @media (max-width: 576px) {
+    .ourservices-container {
+      display: flex;
+      flex-direction: column; 
+      margin-right: 40px; 
+     
+   
+    }
   }
   

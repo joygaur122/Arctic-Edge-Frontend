@@ -9,9 +9,9 @@ import Footer from "../home/Footer"
 
 const Heating = () => {
   return (
-<div className="heating-container">
-  <img src={heatImage} lt="Heating Page" className="heating-image" />
-  <div className="heating-content">
+<div className="heatingpage-container">
+  <img src={heatImage} lt="Heatingpage Page" className="heatingpage-image" />
+  <div className="heatingpage-content">
     <h1>Heating Services</h1>
   </div>
   <HeatingServices/>

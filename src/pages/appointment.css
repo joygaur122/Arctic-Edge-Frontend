@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.appt-container {
+    position: relative;
+    height: 50vh;
+}
+.appt-image {
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+}
+.appt-content {
+position: absolute;
+top: 30%;
+left: 42%;
+
+}
+.appt-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+
+}
+@media(max-width: 430px) {
+  .appt-content h1 {
+    margin-left: -70px;
+  }
+}
