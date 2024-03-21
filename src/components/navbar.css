@@ -90,19 +90,19 @@
 }
 
 @media (max-width: 430px) {
-  /* ... other styles ... */
+
 
   .sign-up-link {
-    display: block; /* Show only on smaller screens */
+    display: block; 
     position: absolute;
     top: 0;
     right: 0;
-    padding: 15px; /* Adjust padding as needed */
+    padding: 15px; 
   }
 
   .sign-up-link a {
     text-decoration: none;
-    color: #1e17a1; /* Same color as other links, change if needed */
+    color: #1e17a1; 
     font-size: 20px;
     font-weight: 500;
   }

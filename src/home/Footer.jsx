@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
         <div className="footer-content">
-        <div className="footer-info">
+        <div className="footer-info1">
             <h2>California Comfort</h2>
             <p>Copyright @2024 Arctic Edge</p>
             <p>Powered by KeyDesigns</p>
