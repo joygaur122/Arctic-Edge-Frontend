@@ -1,5 +1,5 @@
 import Contact from "../models/contact.model.js";
-import UserError from "../errors/UserErrors.js";
+import UserError from "../errors/userserrors.js";
 
 export const handleSubmit = async (req, res) => {
   const { name, email, phone, message } = req.body;
