@@ -1,7 +1,7 @@
 import express from "express";
-import { handleSubmit } from "../controllers/mycontactcontroller.js";
+import { handleSubmit } from "../controllers/MyContactControllers.js";
 import Contact from "../models/contact.model.js";
-import UserErrors from '../errors/usererrors.js';
+import UserErrors from '../errors/UserErrors.js';
 
 const router = express.Router();
 
