@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 70vh;
+
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+ object-fit: cover;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 30%; /* Adjust the left value to move it to the left side */
+  transform: translate(-50%, -50%);
+  text-align: left; /* Align text to the left */
+  color: white;
+}
+
+.home-content h2 {
+  margin-bottom: 10px;
+  font-size: 22.8px;
+  font-weight: 600px;
+  line-height: 28.7931px;
+  color: #ffffff;
+  word-spacing: 0px;
+  margin-left: 20px;
+  
+}
+
+.home-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  word-spacing: 0px;
+  margin-right: 80px;
+  text-align: center;
+
+  color: #fff
+}
+
+.home-content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: #ffffff;
+  word-spacing: 0px;
+}
+
+.home-button {
+  display: block;
+  height: 42.8589px;
+  line-height: 14.592px;
+  text-decoration: none solid rgb(255,255,255);
+  word-spacing: 0px;
+  background-color: #fff;
+  color: #Fff;
+  background-color: #1e17a1;
+  border: 0px solid #1e17a1;
+  border-radius: 50px;
+  padding: 14px 40px 14px 40px;
+  font-size: 1em;
+
+  cursor: pointer;
+  margin-left: 130px;
+}
+
+@media (max-width: 430px) {
+
+
+  .home-content h1  {
+    font-size: 0px;
+ font-weight: 600;
+ margin-top: 29px;
+ 
+
+position: relative;
+right: -20%
+  }
+  .home-content h2 {
+ font-size: 0px;
+ font-weight: 600;
+ margin-bottom: -19px;
+ line-height:39px;
+ word-spacing: 0px;
+position: relative;
+right: -20%;
+
+
+
+
+  }
+  .home-content p {
+    font-size: 13px;
+    max-width: 600px;
+    margin-bottom:380px;
+    margin-left: 70px;
+ 
+    color: #fff;
+    word-spacing: 0px;
+  }
+  
+  .home-image {
+   
+    max-width: 460px; 
+    height: auto; 
+  }
+  .home-button {
+    height: 42.8589px;
+    width: 68%;
+    line-height: 14.592px;
+    background-color: #fff;
+    color: #Fff;
+    background-color: #1e17a1;
+    border: 0px solid #1e17a1;
+    border-radius: 40px;
+    padding: 14px 40px 14px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: -80px;
+    position: absolute;
+    top: 35%;
+    right: 30px;
+  }
+
+  
+}
+@media(max-width: 390px) {
+  .home-button {
+    top:35%;
+    line-height: 5px;
+    word-spacing: 2px;
+    padding:20px;
+  }
+}

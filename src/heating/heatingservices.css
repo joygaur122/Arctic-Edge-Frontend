@@ -1,0 +1,126 @@
+.heat-services-container {
+    background-color: #eeeeeeee;
+    
+  
+}
+.heat-services-title {
+  height: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1ea7;
+  width: 759.992px;
+  padding: 70px 70px 70px 70px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  margin-right: 40px;
+ 
+
+
+  }
+  .heat-services-description {
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 759.992px;
+  padding: 70px 70px 70px 70px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  top: -70px;
+  right: 0px;
+  left: -40px;
+  display: flex;
+
+ 
+
+  
+  }
+  .heat-services-category-name{
+  display: flex;
+  height: 60px;
+  width: 759.992px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  bottom: 320px;
+  right: 0px;
+  left: 820px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+  }
+  .heat-services-category-description {
+ font-size: 17px;
+ font-weight: 700;
+  width: 759.992px;
+  min-height: auto;
+  min-width: auto;
+  text-align: center;
+  position: relative;
+  bottom: 320px;
+  right: 0px;
+  left: 820px;
+  padding: 20px;
+  color: black;
+  }
+  @media (max-width: 440px) {   
+    .heat-services-container {
+    font-size: 13px;
+     padding: 70px;
+     margin-left: -90px;
+    }
+    .heat-services-category-name{
+    position: relative;
+    bottom: 60%;
+    left: 10%;
+    padding: 25px;
+    width: 80%;
+
+   
+    }
+    .heat-services-description{
+     width: 120%;
+     height: 300px;
+     margin-left: 45px;
+     padding: -40px;
+     
+    }
+    .heat-services-category-description {
+      position: relative;
+      bottom:20%;
+   
+ 
+    }
+    .heat-services-title {
+     width: 100%;
+     height: 50%;
+     margin-left: 40px;
+    }
+   
+  }
+  @media (max-width: 390px) {
+    .heat-services-description {
+      padding: 20px;
+    } 
+    .cool-services-title {
+      margin-left: 20px;
+    }
+    .heat-services-category-name{
+        position: relative;
+        bottom: 80%;
+    }
+    .heat-services-description{
+        width:130%;
+        padding: 60px;
+    }
+  }

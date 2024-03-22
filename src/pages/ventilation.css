@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.vent-container {
+    position: relative;
+    height: 50vh;
+}
+.vent-image {
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+}
+.vent-content {
+position: absolute;
+top: 30%;
+right:65%;
+
+}
+.vent-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff
+}
+
+@media(max-width: 390px) {
+  .vent-image {
+    width: 100%; 
+
+    height: auto; 
+  }
+  .vent-content h1{
+    margin-right: -150px;
+  }
+}
+@media(max-width: 430px) {
+  .vent-image {
+    width: 100%; 
+
+    height: auto; 
+  }
+  .vent-content h1{
+    margin-right: -150px;
+  }
+
+}

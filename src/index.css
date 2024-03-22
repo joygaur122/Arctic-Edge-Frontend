@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+Body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #ffffff;
+  color:#333;
+  line-height: 1.6;
+}
+a {
+color: #fff
+}
+
+h1,h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%
+}

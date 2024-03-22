@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.services-container {
+  position: relative;
+  height: 80vh;
+
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+ object-fit: cover;
+ object-position: center  ;
+}
+
+.service-content {
+    position: absolute;
+    top: 50%;
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    text-align: left; 
+    color: white;
+  }
+  .service-content h1 {
+   font-size: 32px;
+   font-weight: 700;
+   word-wrap: break-word;
+  }
+  .service-content p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 31.5714px;
+    margin-left: 90px;
+    margin-top: 30px;
+  }
+  .service-button {
+    display: block;
+    height: 42.8589px;
+    line-height: 14.592px;
+    text-decoration: none solid rgb(255,255,255);
+    word-spacing: 0px;
+    background-color: #fff;
+    color: #Fff;
+    background-color: #1e17a1;
+    border: 0px solid #1e17a1;
+    border-radius: 50px;
+    padding: 14px 40px 14px 40px;
+    font-size: 1em;
+    margin-top: 50px;
+    margin-left: 190px;
+    cursor: pointer;
+    
+  }
+  
+
+@media (max-width: 576px) {
+  .services-container {
+    max-width: 100%; 
+    margin-top: 20px;
+    margin-right: 0; 
+    margin-left: auto; 
+    position: relative; 
+  }
+  .service-button {
+    height: auto;
+    margin-left: 55px;
+    padding: 20px 40px;
+    background-color: #fff;
+    color: #Fff;
+    background-color: #1e17a1;
+    border: 0px solid #1e17a1;
+    border-radius: 50px;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+    
+  }
+  .service-content h1 {
+    position: relative;
+    left: 19%;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+   }
+  }
+
+  @media(max-width: 390px) {
+    .service-button {
+      height: auto;
+      margin-right: -65px;
+      padding: 20px 40px;
+      background-color: #fff;
+      color: #Fff;
+      background-color: #1e17a1;
+      border: 0px solid #1e17a1;
+      border-radius: 50px;
+      font-size: 17px;
+      margin-top: 10px;
+      cursor: pointer;
+   
+      
+    }
+  }
+
+ @media(max-width: 390px) {
+  .services-container {
+    max-width: 100%; 
+    margin-top: 20px;
+    margin-right: 0;  
+    position: relative; 
+    z-index: 1; 
+  }
+ }
